@@ -1,6 +1,10 @@
 package tianqin.iedu.facatory;
 
 public abstract class Product {
+	public final static String FRUIT = "Fruit";
+	public final static String MEAT  = "Meat";
+	public final static String FOOD  = "Food";
+	public final static String WATER = "Water";
 	private String name;
 	private String type;
 	private int weight;

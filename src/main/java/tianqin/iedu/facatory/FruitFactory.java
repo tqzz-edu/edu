@@ -3,7 +3,7 @@ package tianqin.iedu.facatory;
 public class FruitFactory implements Factory{
 	class FruitProduct extends Product{
 		public FruitProduct() {
-			super("Apple","fruit",10);
+			super("Apple",Product.FRUIT, 10);
 		}
 		
 		@Override
