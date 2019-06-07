@@ -13,7 +13,14 @@ public class FruitFactory implements Factory{
 		}
 		
 	}
+	
 	public Product CreateProduct() {
 		return new FruitProduct();
 	}
+	
+	@Override
+	public Product CreateProduct(String type) {
+		return null;
+	}
+	
 }

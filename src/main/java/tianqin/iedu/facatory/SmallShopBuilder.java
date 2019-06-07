@@ -1,8 +1,10 @@
 package tianqin.iedu.facatory;
 
 public class SmallShopBuilder implements ShopBuilder{
+	private ProductFactory productFactory;
 	private Shop shop;
 	public SmallShopBuilder() {
+		productFactory = new ProductFactory();
 		shop = new Shop();
 	}
 
@@ -17,18 +19,26 @@ public class SmallShopBuilder implements ShopBuilder{
 
 	@Override
 	public void buildFood() {
-		// 其他可以参考
-		
+		// 采用工厂方法——虚拟构造函数
+		for(int j = 0; j < 30; j++) {
+			shop.addProduct(productFactory.CreateProduct(Product.FOOD));
+		}
 	}
 
 	@Override
 	public void buildWater() {
-		
+		// 采用工厂方法——虚拟构造函数
+		for(int j = 0; j < 30; j++) {
+			shop.addProduct(productFactory.CreateProduct(Product.WATER));
+		}
 	}
 
 	@Override
 	public void buildMeate() {
-		
+		// 采用工厂方法——虚拟构造函数
+		for(int j = 0; j < 30; j++) {
+			shop.addProduct(productFactory.CreateProduct(Product.MEAT));
+		}
 	}
 
 	@Override
