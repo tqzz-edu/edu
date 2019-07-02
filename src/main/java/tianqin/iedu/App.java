@@ -1,5 +1,6 @@
 package tianqin.iedu;
 
+import tianqin.iedu.behavior.ChainClient;
 import tianqin.iedu.facatory.Factory;
 import tianqin.iedu.facatory.FruitFactory;
 import tianqin.iedu.facatory.NutritionFacts;
@@ -21,5 +22,8 @@ public class App
         // 采用构建器 初始化
         NutritionFacts cocaCola = new NutritionFacts.Builder().setServingSize(240)
         		.setServings(8).setCalories(100).setSodium(35).setCarbohydrate(27).build();
+        
+        ChainClient ccl = new ChainClient();
+        ccl.invoker();
     }
 }
