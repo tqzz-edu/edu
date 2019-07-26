@@ -88,7 +88,7 @@ public class StateApplication {
 			
 		}
 	}
-	
+		
 	public void run() {
 		Context context = new Context();
 		String[] actions = new String[] {"quiet", "attack", "defense", "stealth", "run"};
